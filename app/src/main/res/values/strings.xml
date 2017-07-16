@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">FirstHomeTask</string>
-    <string name="hello">Hello KEEPSOLID</string>
-    <string name="button">Some Button</string>
+
+    <string name="send">Отправить</string>
+    <string name="clear">Очистить</string>
+    <string name="enter_email">Введите Email адрес</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="reject">Отклонить</string>
+    <string name="let">Разрешить</string>
+
+    <string name="incorrect_email">Некорректный Email адрес</string>
+    <string name="rejected">Пользователь не подтвердил адрес</string>
+    <string name="sending">Отправка сообщения...</string>
 </resources>

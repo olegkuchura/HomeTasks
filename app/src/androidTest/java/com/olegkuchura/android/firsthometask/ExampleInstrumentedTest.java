@@ -1,4 +1,4 @@
-package com.bignerbranch.android.firsthometask;
+package com.olegkuchura.android.firsthometask;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.bignerbranch.android.firsthometask", appContext.getPackageName());
+        assertEquals("com.olegkuchura.android.firsthometask", appContext.getPackageName());
     }
 }

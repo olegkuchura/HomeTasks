@@ -1,4 +1,4 @@
-package com.bignerbranch.android.firsthometask;
+package com.olegkuchura.android.firsthometask;
 
 import org.junit.Test;
 
