@@ -1,6 +1,7 @@
 package com.olegkuchura.android.firsthometask;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,8 +38,8 @@ public class SecondActivity extends AppCompatActivity {
                 intent.putExtra("isConfirmed", true);
                 setResult(RESULT_OK, intent);
 
-                Intent mailIntent = new Intent(Intent.ACTION_SEND);
-                mailIntent.setType("message/rfc822");
+                Intent mailIntent = new Intent(Intent.ACTION_SENDTO);
+                mailIntent.setData(Uri.parse("mailto:"));
                 mailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {email});
                 startActivity(Intent.createChooser(mailIntent, "Отправка email"));
 
