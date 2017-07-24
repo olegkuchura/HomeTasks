@@ -7,8 +7,11 @@
     <string name="confirm">Подтвердить</string>
     <string name="reject">Отклонить</string>
     <string name="let">Разрешить</string>
+    <string name="ok">OK</string>
 
     <string name="incorrect_email">Некорректный Email адрес</string>
     <string name="rejected">Пользователь не подтвердил адрес</string>
     <string name="sending">Отправка сообщения...</string>
+    <string name="user_confirmed">Пользователь подтвердил адрес</string>
+
 </resources>

@@ -10,6 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
+    public static final int REQUEST_CODE = 1;
+    private static final int REQUEST_CODE_FOR_SEND = 2;
 
     private TextView textViewEmail;
     private Button buttonConfirm;
@@ -41,12 +43,10 @@ public class SecondActivity extends AppCompatActivity {
                 Intent mailIntent = new Intent(Intent.ACTION_SENDTO);
                 mailIntent.setData(Uri.parse("mailto:"));
                 mailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {email});
-                startActivity(Intent.createChooser(mailIntent, "Отправка email"));
+                startActivityForResult(Intent.createChooser(mailIntent, "Отправка email"), REQUEST_CODE_FOR_SEND);
 
                 Toast.makeText(SecondActivity.this, R.string.sending, Toast.LENGTH_SHORT)
                         .show();
-
-                finish();
             }
         });
 
@@ -59,5 +59,13 @@ public class SecondActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE_FOR_SEND) {
+            finish();
+        }
     }
 }
