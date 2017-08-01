@@ -27,7 +27,7 @@ public class ConfirmFragment extends Fragment {
         textView = (TextView) view.findViewById(R.id.tv_text);
         button = (Button) view.findViewById(R.id.b_ok);
 
-        imageViewGalka.setImageResource(R.mipmap.ic_galka);
+        imageViewGalka.setImageResource(R.drawable.ic_galka);
 
         textView.setText(R.string.user_confirmed);
 

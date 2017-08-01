@@ -4,7 +4,6 @@
     <string name="send">Отправить</string>
     <string name="clear">Очистить</string>
     <string name="enter_email">Введите Email адрес</string>
-    <string name="confirm">Подтвердить</string>
     <string name="reject">Отклонить</string>
     <string name="let">Разрешить</string>
     <string name="ok">OK</string>
@@ -14,4 +13,8 @@
     <string name="sending">Отправка сообщения...</string>
     <string name="user_confirmed">Пользователь подтвердил адрес</string>
 
+    <string name="user_category_family">Семья</string>
+    <string name="user_category_friend">Друзья</string>
+    <string name="user_category_work">Работа</string>
+    <string name="user_category_others">Другое</string>
 </resources>

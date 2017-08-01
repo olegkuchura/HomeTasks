@@ -71,8 +71,6 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 if (data == null) return;
                 if (data.getBooleanExtra("isConfirmed", false)) {
-                    FirstFragment fragment = (FirstFragment) fragmentManager.findFragmentByTag("FirstFragment");
-                    if (fragment != null) fragment.clearEditText();
                     fragmentForReplace = "ConfirmFragment";
                 } else {
                     fragmentForReplace = "RejectFragment";
